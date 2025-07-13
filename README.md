@@ -29,4 +29,7 @@ Com esse exercício consegui me aprofundar e explorar mais os recursos do Node.j
 Conceitos como resposividade não foram aplicados, por exemplo, porque ainda não era o intuito dessa aplicação, já que o foco é entender a arquitetura que acontece
 no Back-End! --- Mas não pude evitar de deixar o exercício com uma cara mais agradável utilizando algumas das coisas que aprendi🤭
 
+Com mais tempo futuramente posso adicionar mais coisas e transformar esse simples exercício em um projeto, com novos conceitos e adições, mas por agora espero que
+tenha gostado tanto quanto eu gostei!
+
  💻 [VER O CÓDIGO](./7_TEMPLATE_ENGINE/10_tarefa_04) </br>
