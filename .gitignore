@@ -1,0 +1,15 @@
+# Dependências
+node_modules/
+
+# Logs
+npm-debug.log*
+
+# Arquivos de ambiente
+.env
+
+# Cache do VSCode
+.vscode/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
