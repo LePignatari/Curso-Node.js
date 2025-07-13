@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "inquirer": "^8.2.6"
+  }
+}
