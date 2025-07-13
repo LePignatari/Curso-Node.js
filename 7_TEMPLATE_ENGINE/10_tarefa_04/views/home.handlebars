@@ -1,0 +1,29 @@
+<section>
+  <div class="hero-container">
+    <div class="hero-content">
+      <h1>Encontre os Melhores Aparelhos</h1>
+      <p>Confira nossa seleção de smartphones, notebooks, tablets, e mais.</p>
+      <a href="#" class="button">Ver Produtos</a>
+      <h2>Destaques</h2>
+    </div>
+    <div class="hero-image">
+      <img class="phone-img" src="/img/phone1.png" />
+    </div>
+  </div>
+</section>
+<section>
+  <div class="highlights-container">
+    <div class="products-container">
+      {{#each products}}
+        <div class="product-container">
+          <img class="product-img" src="{{this.image}}" alt="" />
+          <div class="info-container">
+            <p class="name">{{this.name}}</p>
+            <p class="price">R${{this.price}}</p>
+            <a class="button" href="/produto/{{this.id}}">Ver mais</a>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</section>

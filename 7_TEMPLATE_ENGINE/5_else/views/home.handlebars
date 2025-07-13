@@ -1,0 +1,12 @@
+<h1>Olá!</h1>
+{{#if approved}}
+  <p>Parabéns, seu cadastro foi aprovado!</p>
+{{else}}
+  <p>Seu cadastro ainda não foi aprovado!</p>
+{{/if}}
+<p>O nome do usuário é {{user.name}} {{user.surname}}</p>
+{{#if auth}}
+  <p>
+    Você está autenticado, acesse a <a href="/dashboard">área de membros!</a>
+  </p>
+{{/if}}
