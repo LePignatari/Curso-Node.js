@@ -1,0 +1,271 @@
+h1 {
+  color: pink;
+}
+
+p {
+  color: rgb(255, 0, 149);
+}
+
+h2 {
+  text-align: center;
+  font-size: 50px;
+}
+
+/* Classes e IDS*/
+
+.p-texto {
+  color: cadetblue;
+}
+
+#titulo {
+  color: blue;
+  font-size: 50px;
+}
+
+/* Especividade */
+div p {
+  color: red;
+}
+
+.p-dentro-da-div {
+  color: blue;
+}
+
+#p-super-especifico {
+  color: green;
+}
+
+/* Cores */
+
+.nome {
+  color: purple;
+}
+
+.hexa {
+  color: #00a4fc;
+}
+
+.rgba {
+  color: rgb(255, 217, 2);
+}
+
+/* Backgrounds */
+
+.div-background {
+  background-image: url("img/sunset.jpeg");
+  height: 300px;
+}
+
+.titulo-background {
+  text-align: center;
+  background-color: #000;
+}
+
+/* Fontes */
+
+.family {
+    color: #000;
+    font-size: 40px;
+}
+
+.family.serif { /* Super específico */
+    color: red;
+}
+
+.serif {
+    font-family: "times new roman";
+}
+
+.sans-serif {
+    font-family: "arial";
+}
+
+.monospace {
+    font-family: "courier new";
+}
+
+.italic {
+    font-style: italic;
+}
+
+.oblique {
+    font-style: oblique;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.variant {
+    font-variant: small-caps; 
+}
+
+/* Boxmodel */
+
+body { /* Eliminando o estilo de margem que é definido pelo body inicialmente */
+    margin: 0;
+}
+
+.boxmodel {
+    background-color: #00a4fc;
+    width: 200px;
+    height: 200px;
+    /* especifico agrupado */
+    /* padding: 20px 30px 5px 5px; */
+    /* especifico agrupado 3 medidas - top, right-left, bottom */
+    /* padding: 30px 20px 5px; */
+    /* especifico agrupado 2 medidas - top-bottom, right-left*/
+    padding: 30px 20px; 
+    border: 3px solid red;
+    border-width: 5px 3px 4px 10px;
+    border-radius: 15px;
+    margin: 50px;
+    /* display: none; */
+    /* display: inline; */
+    /* display: inline-block; */
+    display: block;
+}
+
+.p-box {
+    color: #000;
+    margin: 0;
+}
+
+/* Positions */
+/* 
+Static - flow no html, não é alterada por top, left, right e bottom
+Relative - flow no html, mas pode ser alterada
+Fixed - posicionar em qualquer lugar da tela, posicionada em relação ao html
+Absolute - posicionada em qualquer lugar, respeita o antecessor (elemento pai)
+Sticky - no flow do html, acompanha ao passar o scroll*/
+
+.div-positions {
+  width: 500px;
+  height: 500px;
+  background-color: aquamarine;
+  border-bottom: 2px solid black;
+}
+
+.static {
+  position: static;
+}
+
+.relative {
+  position: relative;
+  background-color: plum;
+  top: 100px;
+  left: 50px;
+}
+
+.absolute {
+  position: absolute;
+  background-color: palegreen; 
+  right: 0;
+  top: 0;
+}
+
+.mini-div {
+  width: 100px;
+  height: 100px;
+  left: 0;
+  top: 0;
+}
+
+.fixed {
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  background-color: palegoldenrod;
+  bottom: 0;
+  right: 0 ;
+}
+
+.sticky {
+  position: sticky;
+  background-color: palevioletred;
+  top: 0px;
+}
+
+/* Float */
+
+.container {
+  padding: 50px;
+}
+
+.div-float {
+  overflow: auto;
+}
+
+.img-float {
+  width: 300px;
+  height: 300px;
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.p-float {
+  color: #000;
+}
+
+/* Clear */
+/* Ignora o elemento flutuante e segue a estrutura do html, elemento de bloco */
+
+.clear {  
+  clear: both;
+}
+
+/* Unidades de medida */
+/* Pixel - não é muito recomendado quando falamos de resposividade*/
+
+.pixel-1 {
+  background-color: pink;
+  width: 100px;
+  height: 100px;
+}
+
+/* Porcentagem */
+
+.pai-porcentagem {
+  background-color: #000;
+  width: 500px;
+  height: 500px;
+}
+
+.porcentagem-1 {
+  background-color: yellow;
+  width: 50%;
+  height: 50%;
+}
+
+.porcentagem-2 {
+  background-color: #000;
+  width: 50%;
+  height: 50%;
+}
+
+/* Em - em relação ao elemento pai ele da a medida para os elementos filhos*/
+
+.pai-em {
+  font-size: 50px;
+}
+
+.em-1 {
+  background-color: paleturquoise;
+  width: 1em;
+  height: 1em;
+}
+
+/* Rem - relacionado ao root (elemento raiz, html)*/
+
+html {
+  font-size: 20px;
+}
+
+.rem-1 {
+  background-color: palegreen;
+  width: 1rem;
+  height: 1rem;
+}
