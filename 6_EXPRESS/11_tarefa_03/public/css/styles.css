@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(202, 230, 255);
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    color: rgb(57, 101, 102);
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+    color: cadetblue;
+}
