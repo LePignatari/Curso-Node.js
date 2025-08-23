@@ -3,7 +3,6 @@ const exphbs = require("express-handlebars");
 const conn = require("./db/conn");
 
 const User = require("./models/User");
-const { where } = require("sequelize");
 
 const app = express();
 
